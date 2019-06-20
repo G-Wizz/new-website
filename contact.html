@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Greg Schmitt Designs | Contact</title>
+    <link rel="stylesheet" href="styles/styles.css" />
+    <link
+      rel="stylesheet"
+      media="screen and (max-width: 768px)"
+      href="styles/mobile.css"
+    />
+    <link
+      rel="stylesheet"
+      media="screen and (max-width: 1100px)"
+      href="styles/widescreen.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=PT+Mono|Quicksand|Roboto+Mono|Source+Code+Pro|Special+Elite|Varela"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <section id="title" class="text-center py-1">
+      <h1><a href="index.html">Greg Schmitt Designs</a></h1>
+    </section>
+
+    <nav id="navbar">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="portfolio.html">Portfolio</a></li>
+        <li><a class="active" href="contact.html">Contact</a></li>
+      </ul>
+      <div class="burger-btn">
+        <div class="top"></div>
+        <div class="bottom"></div>
+      </div>
+    </nav>
+
+    <main>
+      <div id="image">
+        <img src="images/greg.svg" alt="greg picture" />
+      </div>
+
+      <div class="vertical-text ">
+        <p id="creative">Creative</p>
+        <p id="web-dev">Web Developer</p>
+      </div>
+
+      <section id="contact-form">
+        <form action="#" type="submit">
+          <div class="form-item">
+            <label for="name">Name</label>
+            <input name="name" type="text" id="name" />
+          </div>
+          <div class="form-item">
+            <label for="email">Email</label>
+            <input name="email" type="email" id="email" />
+          </div>
+          <div class="form-item">
+            <label for="message">Message</label>
+            <textarea
+              name="message"
+              type="text"
+              id="message"
+              rows="10"
+            ></textarea>
+          </div>
+          <div>
+            <input type="submit" id="submit" />
+          </div>
+        </form>
+      </section>
+      <div id="cup">
+        <img src="images/greg-cup.png" alt="cup image" />
+      </div>
+    </main>
+
+    <footer id="footer" class="text-center">
+      <div>
+        <p>gregschmittdesigns.com &copy; 2017</p>
+      </div>
+    </footer>
+  </body>
+</html>

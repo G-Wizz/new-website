@@ -1,0 +1,283 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background: #86c3ed;
+  height: 100vh;
+}
+
+a {
+  text-decoration: none;
+}
+
+#title h1 a,
+#navbar,
+main #welcome,
+.vertical-text,
+#about-text,
+#contact-form form,
+#contact-form #submit,
+#portfolio-content .portfolio-section,
+footer {
+  color: #707070;
+  font-family: "Special Elite", cursive;
+}
+
+/* UTILITY CLASSES */
+.container {
+  /* max-width: 1100px; */
+  /* margin: auto; */
+  padding: 0 2rem;
+  /* overflow: hidden; */
+}
+
+.text-color {
+  color: #707070;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.py-1 {
+  padding: 1.5rem 0;
+}
+.py-2 {
+  padding: 2rem 0;
+}
+.py-3 {
+  padding: 3rem 0;
+}
+
+.p-1 {
+  padding: 1.5rem;
+}
+.p-2 {
+  padding: 2rem;
+}
+.p-3 {
+  padding: 3rem;
+}
+
+.active {
+  color: #fff !important;
+  text-shadow: 0 0 1.1rem #333;
+}
+
+.form-item {
+  margin: 1rem 0;
+}
+/* TITLE */
+#title h1 {
+  font-size: 3rem;
+  letter-spacing: 2;
+}
+
+/* NAVBAR */
+#navbar {
+  display: flex;
+  justify-content: center;
+  /* padding-bottom: 1rem; */
+}
+
+#navbar ul {
+  display: flex;
+  list-style: none;
+}
+
+#navbar ul li a:hover {
+  color: #fff;
+  text-shadow: 0 0 1.1rem #333;
+}
+
+#navbar ul li a {
+  padding: 0.5rem 5rem;
+  color: #707070;
+}
+
+.burger-btn {
+  display: none;
+  width: 35px;
+  height: 35px;
+  background: #707070;
+  border: 1px solid #fff;
+  border-radius: 5px;
+  box-shadow: 0 0.2rem 0.3rem #333;
+}
+
+.burger-btn .top {
+  display: block;
+  width: 50%;
+  height: 34.5%;
+  margin: auto;
+  margin-top: 7px;
+  border-top: 1px solid #fff;
+  border-bottom: 1px solid #fff;
+}
+
+.burger-btn .bottom {
+  display: block;
+  width: 50%;
+  height: 30%;
+  margin: auto;
+  border-bottom: 1px solid #fff;
+}
+
+/* IMAGE */
+main #image img {
+  position: fixed;
+  width: 35%;
+  bottom: 35px;
+  z-index: -1;
+}
+
+main #cup img {
+  position: fixed;
+  bottom: 2rem;
+  right: 0;
+  z-index: -2;
+  width: 25%;
+}
+
+/* MAIN */
+
+main #welcome {
+  position: absolute;
+  /* margin-left: 45%;
+  margin-top: 200px; */
+  margin: auto;
+  top: 50%;
+  left: 0;
+  bottom: 0;
+  right: 0;
+}
+
+/* VERTICAL TEXT */
+
+.vertical-text {
+  position: fixed;
+  z-index: -1;
+  margin: auto;
+  right: 0;
+  top: 50%;
+  bottom: 0;
+}
+
+.vertical-text #creative {
+  transform: rotate(-90deg);
+  width: 100px;
+  padding-bottom: 1rem;
+}
+
+.vertical-text #web-dev {
+  transform: rotate(90deg);
+  width: 120px;
+  padding-bottom: 1rem;
+}
+
+/* FOOTER */
+footer {
+  width: 100%;
+  bottom: 0;
+  position: fixed;
+  background: #fff;
+  opacity: 0.9;
+  padding: 10px 0;
+}
+
+/* ********* ABOUT PAGE ********* */
+#about-text {
+  position: absolute;
+  padding-top: 3rem;
+  padding-bottom: 1rem;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  overflow: auto;
+}
+
+#about-text p {
+  width: 50%;
+  height: 600px;
+  text-shadow: 0 0 2.5rem #fff;
+}
+
+/* *********** CONTACT PAGE ************ */
+#contact-form {
+  display: flex;
+  justify-content: center;
+  margin-top: 100px;
+}
+
+#contact-form form {
+  width: 500px;
+  text-align: center;
+}
+
+#contact-form input,
+textarea {
+  display: block;
+  width: 100%;
+  border: none;
+  border-radius: 5px;
+  margin-top: 0.5rem;
+  box-shadow: 0 0 0.5rem #333;
+  z-index: 2;
+}
+
+#contact-form .form-item input,
+#contact-form .form-item textarea {
+  padding: 0.75rem 0.5rem;
+}
+
+#contact-form #submit {
+  width: 100px;
+  align-items: center;
+  margin: auto;
+  padding: 0.5rem 1rem;
+  background: #333;
+  color: #fff;
+  cursor: pointer;
+}
+#contact-form #submit:hover {
+  background: #acf;
+  color: #333;
+}
+
+/* ********** PORTFOLIO PAGE ********* */
+
+#portfolio-content {
+  margin: 1.5rem 4rem;
+  border-radius: 10px;
+  background: #444;
+  display: flex;
+  justify-content: space-around;
+}
+
+#portfolio-content .portfolio-section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 1.5rem;
+  text-align: center;
+  height: 70vh;
+  overflow: auto;
+}
+#portfolio-content .portfolio-section p {
+  color: #eee;
+  padding-bottom: 1rem;
+  padding-top: 5px;
+}
+
+#portfolio-content .portfolio-section img {
+  width: 200px;
+  height: 160px;
+  box-shadow: 0 0.5rem 0.5rem #222;
+}
+
+#portfolio-content .portfolio-section a {
+  padding: 1rem;
+}
