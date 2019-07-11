@@ -3,19 +3,14 @@
   display: none;
 }
 
-.burger-btn {
-  display: block;
-  width: 35px;
-  height: 35px;
-  background: #707070;
-  border: 1px solid #fff;
-  border-radius: 5px;
-  margin: auto;
+/* MINI NAV */
+#mini-nav {
+  display: none;
 }
 
-.burger-btn:hover {
-  background: #acf;
-}
+/* .toggle-active {
+  display: block;
+} */
 
 /* WELCOME TEXT */
 main #welcome {
